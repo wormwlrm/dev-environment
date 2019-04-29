@@ -154,6 +154,25 @@ code --install-extension Zignd.html-css-class-completion
 ```
 </details>
 
+## Slack Dark Theme
+
+<details>
+	<summary>show</summary>
+
+`app.asar.unpacked/src/static/ssb-interop.js`
+
+```javascript
+document.addEventListener('DOMContentLoaded', function() {
+ $.ajax({
+   url: 'https://raw.githubusercontent.com/laCour/slack-night-mode/master/css/raw/black.css',
+   success: function(css) {
+     $("<style></style>").appendTo('head').html(css);
+   }
+ });
+});
+```
+</details>
+
 ## iTerm2
 
 <details>
